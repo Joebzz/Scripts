@@ -1,0 +1,1 @@
+for %%a in (*.asf) do cmd /c "%ProgramFiles(x86)%\VideoLAN\VLC\vlc.exe" -I --qt-start-minimized dummy -vvv %%a --sout=#transcode{}:standard{access=file,mux=ps,dst=%%~na.ps}  vlc://quit
